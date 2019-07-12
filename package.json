@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "raf": "^3.4.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -10,7 +11,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "mocha src/test-config 'src/**/*.test.js'",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -27,5 +28,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.5.4",
+    "@babel/register": "^7.4.4",
+    "expect": "^24.8.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^6.1.4"
   }
 }
