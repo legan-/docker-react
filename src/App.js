@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <p>changed on feature branch</p>
         <p>To run tests use the following command in a second terminal window:</p>
         <code>
           docker exec -it e1365fe95e07 npm run test
